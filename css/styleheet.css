@@ -92,7 +92,6 @@ h3 {
 
 }
 
-
 /*begin header
  --------------------------------*/
 header {
@@ -714,12 +713,16 @@ pattern-schedule*/
     z-index: 191;
     left: 50px;
     top: 240px;
-    font-weight: 600;
 
 }
 
 .our-blog-col__text h3 {
     color: white;
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+}
+
+.our-blog-col__text p {
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
 }
 
 /*instagram-feed
@@ -926,31 +929,35 @@ pattern-schedule*/
 .back-call {
     padding-top: 50px;
     display: block;
+
 }
 
 .back-call-row {
-    position: relative;
     display: flex;
-    border: 15px solid #0090EA;
+    border: 1px solid #0090EA;
     border-radius: 25px 0 25px 0;
+    position: relative;
+
 
 }
-.form-one-wrapper{
+
+.form-one-wrapper {
     border-radius: 25px 0 25px 0;
-    border: 10px solid white;
     width: 70%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
 }
-
-
 
 .form-one {
-    padding: 10px 10px 30px 80px;
+    padding: 14px 10px 30px 80px;
     background-color: #0090EA;
     color: white;
     border-radius: 25px 0 0 0;
+    margin: 0px;
 
 }
-
 
 .form-one-title {
     font-size: 45px;
@@ -961,27 +968,33 @@ pattern-schedule*/
 .back-call label, input, textarea {
     display: block;
 }
+
 .form-one-wrapper input::-webkit-input-placeholder {
     color: white;
 }
+
 .form-one-wrapper input::-moz-placeholder {
     color: white;
 }
+
 .form-one-wrapper textarea::-webkit-input-placeholder {
     color: white;
 }
+
 .form-one-wrapper textarea::-moz-placeholder {
     color: white;
 }
+
 /*form2
  -------------------- */
 .form-two-wrapper {
-    border: 2px solid #0090EA;
-    border-radius: 0 0 25px 0;
+    border: 10px solid #0090EA;
     background-color: white;
     padding: 8px;
     display: inline-block;
     width: 45%;
+    border-left: none;
+    border-radius: 0 0 25px 0;
 }
 
 .form-two {
@@ -991,7 +1004,6 @@ pattern-schedule*/
     border-radius: 0 0 25px 0;
 }
 
-
 .form-two-title {
     font-size: 45px;
     padding: 10px 0;
@@ -999,26 +1011,27 @@ pattern-schedule*/
 }
 
 .form-two-content {
-    padding:  20px 0;
+    padding: 20px 0;
     color: #333333;
 }
 
-.form-one input{
+.form-one input {
     width: 362px;
     border: none;
     border-bottom: 1px solid #EDEDED;
     margin: 20px 0;
     padding: 10px;
-    background-color:#0090EA;
+    background-color: #0090EA;
 }
 
 .form-textarea {
-    width:457px;
-    background-color:#0090EA;
+    width: 457px;
+    background-color: #0090EA;
     border-color: white;
     padding: 10px;
     height: 90px;
 }
+
 .form-two input {
     width: 350px;
     border: none;
@@ -1026,13 +1039,23 @@ pattern-schedule*/
     margin: 20px 0;
     padding: 10px;
 }
+
 .back-call button {
     padding: 15px 25px;
+}
+
+.back-call-pattern {
+    position: absolute;
+    right: -70px;
+    bottom: 66px;
+    z-index: 0;
+
 }
 
 /*footer
  --------------------------------*/
 .footer {
+    position: relative;
     width: 100%;
 }
 
@@ -1114,4 +1137,13 @@ ul {
 
 .footer-button-wrapper {
     background-color: #0090EA;
+}
+
+.rise-up {
+    position: absolute;
+    right: 58px;
+    bottom: 0px;
+    /* border: 1px solid red; */
+    z-index: 6;
+    font-size: 60px;
 }
