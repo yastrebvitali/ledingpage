@@ -82,23 +82,25 @@ h3 {
     background-color: #FFBA00; /* blue */
     border: none;
     color: white;
-    padding: 10px 10px;
+    padding: 15px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 15px;
     border-radius: 8px;
+    margin: 25px 0;
 
 }
 
+
 /*begin header
---------------------------------*/
+ --------------------------------*/
 header {
     position: fixed;
     height: 139px;
     padding: 25px;
     box-shadow: 6px 0 16px rgb(0 0 0 / 50%);
-    z-index: 1000;
+    z-index: 10000;
     width: 100%;
     background-color: white;
 }
@@ -471,7 +473,7 @@ pattern-schedule*/
 
 }
 
-/*begin  baner
+/*begin  banner
 --------------------------------*/
 .banner {
 
@@ -561,7 +563,7 @@ pattern-schedule*/
     line-height: 80%;
     font-weight: 400;
     color: #888;
-    padding-left: 50px;
+    padding-left: 12px;
     margin-top: 9px;
 }
 
@@ -792,7 +794,7 @@ pattern-schedule*/
     height: 100%;
 }
 
-.instogram-feed__like-comments__inner {
+.instagram-feed__like-comments__inner {
     display: inline-block;
     position: absolute;
     top: 200px;
@@ -805,7 +807,7 @@ pattern-schedule*/
 
 }
 
-.instogram-feed__like-comments {
+.instagram-feed__like-comments {
     display: inline-block;
     position: absolute;
     top: 100px;
@@ -822,12 +824,16 @@ pattern-schedule*/
     margin-right: 150px;
     font-size: 35px;
     font-weight: bold;
+    text-shadow: 2px 2px 0 #333;
+
 }
 
 .fa-comment-o {
     color: white;
     font-weight: bold;
     font-size: 35px;
+    text-shadow: 2px 2px 0 #333;
+
 }
 
 /*customer-reviews-title
@@ -923,41 +929,53 @@ pattern-schedule*/
 }
 
 .back-call-row {
+    position: relative;
     display: flex;
+    border: 15px solid #0090EA;
+    border-radius: 25px 0 25px 0;
+
+}
+.form-one-wrapper{
+    border-radius: 25px 0 25px 0;
+    border: 10px solid white;
+    width: 70%;
 }
 
-.form1-wriper {
-    border: 2px solid #0090EA;
-    border-radius: 25px 0 0 0;
-    background-color: white;
-    padding: 8px;
-    display: inline-block;
-    width: 55%;
-}
 
-.form1 {
-    padding: 10px 10px 30px 50px;
+
+.form-one {
+    padding: 10px 10px 30px 80px;
     background-color: #0090EA;
     color: white;
     border-radius: 25px 0 0 0;
-}
-
-.form1-inner {
 
 }
 
-.form1-title {
+
+.form-one-title {
     font-size: 45px;
     padding: 10px 0;
+    font-weight: 900;
 }
 
 .back-call label, input, textarea {
     display: block;
 }
-
+.form-one-wrapper input::-webkit-input-placeholder {
+    color: white;
+}
+.form-one-wrapper input::-moz-placeholder {
+    color: white;
+}
+.form-one-wrapper textarea::-webkit-input-placeholder {
+    color: white;
+}
+.form-one-wrapper textarea::-moz-placeholder {
+    color: white;
+}
 /*form2
  -------------------- */
-.form2-wriper {
+.form-two-wrapper {
     border: 2px solid #0090EA;
     border-radius: 0 0 25px 0;
     background-color: white;
@@ -966,20 +984,50 @@ pattern-schedule*/
     width: 45%;
 }
 
-.form2 {
+.form-two {
     padding: 10px 10px 30px 50px;
     background-color: white;
     color: #0090EA;
     border-radius: 0 0 25px 0;
 }
 
-.form2-inner {
 
-}
-
-.form2-title {
+.form-two-title {
     font-size: 45px;
     padding: 10px 0;
+    font-weight: 900;
+}
+
+.form-two-content {
+    padding:  20px 0;
+    color: #333333;
+}
+
+.form-one input{
+    width: 362px;
+    border: none;
+    border-bottom: 1px solid #EDEDED;
+    margin: 20px 0;
+    padding: 10px;
+    background-color:#0090EA;
+}
+
+.form-textarea {
+    width:457px;
+    background-color:#0090EA;
+    border-color: white;
+    padding: 10px;
+    height: 90px;
+}
+.form-two input {
+    width: 350px;
+    border: none;
+    border-bottom: 1px solid #EDEDED;
+    margin: 20px 0;
+    padding: 10px;
+}
+.back-call button {
+    padding: 15px 25px;
 }
 
 /*footer
@@ -1056,10 +1104,14 @@ ul {
 
 }
 
-.activ {
+.active {
     color: white;
     font-weight: bold;
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 10px
+}
+
+.footer-button-wrapper {
+    background-color: #0090EA;
 }
